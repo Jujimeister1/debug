@@ -1,7 +1,18 @@
-       self.phase_image_paths = {
-            #"toggles": os.path.join(assets_dir, 'duck_dancing.gif'),
-            "keypad":  os.path.join(assets_dir, 'bomb.gif'),
-            "wires":   os.path.join(assets_dir, 'duck_dancing.gif'),
-            "button":  os.path.join(assets_dir, 'bomb.gif'),
-        }
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 274, in start_game
+    check_phases()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 78, in check_phases
+    if (timer._running):
+        ^^^^^^^^^^^^^^
+AttributeError: 'Timer' object has no attribute '_running'
+^CTraceback (most recent call last):
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 321, in <module>
+    window.mainloop()
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1943, in __call__
+    def __call__(self, *args):
     
