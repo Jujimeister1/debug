@@ -1,0 +1,7 @@
+       self.phase_image_paths = {
+            #"toggles": os.path.join(assets_dir, 'duck_dancing.gif'),
+            "keypad":  os.path.join(assets_dir, 'bomb.gif'),
+            "wires":   os.path.join(assets_dir, 'duck_dancing.gif'),
+            "button":  os.path.join(assets_dir, 'bomb.gif'),
+        }
+    
