@@ -1,13 +1,10 @@
-Button RGB Pins
-Toggle Switches Pins
-Exception in Tkinter callback
-Traceback (most recent call last):
+raceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 278, in start_game
-    setup_phases()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 71, in setup_phases
-    gamble = Gamble(
-             ^^^^^^^
-TypeError: Gamble.__init__() got an unexpected keyword argument 'gamble_target'
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 283, in start_game
+    duck.setGamble(gamble)
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 650, in setGamble
+    self.gamble_frame = GambleFrame(
+                        ^^^^^^^^^^^^
+TypeError: GambleFrame.__init__() got an unexpected keyword argument 'master'
