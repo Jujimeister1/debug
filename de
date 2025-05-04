@@ -1,18 +1,35 @@
+spartans@raspberrypi:~/Documents/csc102-defuse $ /bin/python /home/spartans/Documents/csc102-defuse/bomb/code/bomb.py
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Running On Raspberry Pi
+7-Segment Pins
+Keypad Pins
+Jumper Wires Pins
+Button RGB Pins
+Toggle Switches Pins
+Serial Number: DC01B0Y
+Toggles Target: 0001/1
+Wires Target: 01110/14
+Keypad Target: 53283/LEAVE/SYSTEM/EKEFQY (Rot=12)
+Button Target: 0 (B)
+Exception in thread Toggles:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 442, in run
+    super().start()        # if you override start, else keep _running from PhaseThread
+    ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/threading.py", line 952, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+Exception in Tkinter callback
 Traceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 274, in start_game
-    check_phases()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 78, in check_phases
-    if (timer._running):
-        ^^^^^^^^^^^^^^
-AttributeError: 'Timer' object has no attribute '_running'
-^CTraceback (most recent call last):
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 321, in <module>
-    window.mainloop()
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1485, in mainloop
-    self.tk.mainloop(n)
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1943, in __call__
-    def __call__(self, *args):
-    
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 861, in callit
+    func(*args)
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 32, in bootup
+    if (not ANIMATE or n == len(boot_text)):
+                                ^^^^^^^^^
+NameError: name 'boot_text' is not defined
