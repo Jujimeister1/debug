@@ -1,10 +1,17 @@
-raceback (most recent call last):
+ttributeError: 'Gamble' object has no attribute 'roll_button'
+Exception in Tkinter callback
+Traceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 283, in start_game
-    duck.setGamble(gamble)
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 650, in setGamble
-    self.gamble_frame = GambleFrame(
-                        ^^^^^^^^^^^^
-TypeError: GambleFrame.__init__() got an unexpected keyword argument 'master'
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 65, in <lambda>
+    self.canvas.bind_all("<Left>",  lambda e: self.move(-1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 619, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 652, in allow_interaction_for_phase
+    cb()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 643, in confirm
+    if self.roll_button["state"] == "normal":
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'Gamble' object has no attribute 'roll_button'
