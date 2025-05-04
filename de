@@ -1,37 +1,16 @@
-pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
-Hello from the pygame community. https://www.pygame.org/contribute.html
-Running On Raspberry Pi
-7-Segment Pins
-Keypad Pins
-Jumper Wires Pins
-Button RGB Pins
-Toggle Switches Pins
-Serial Number: 10D7BEX
-Toggles Target: 1000/8
-Wires Target: 01011/11
-Keypad Target: 36937/FOXES/CANOPY/SQDEFO (Rot=16)
-Button Target: 1 (G)
-Interacting with toggles
-Interacting with keypad
-Interacting with keypad
-Interacting with keypad
-Interacting with keypad
-Interacting with keypad
-Interacting with toggles
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 67, in <lambda>
-    self.canvas.bind_all("<Right>", lambda e: self.move( 1,  0))
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 68, in <lambda>
+    self.canvas.bind_all("<Up>",    lambda e: self.move( 0, -1))
                                               ^^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 418, in move
-    super().move(dx, dy)
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 109, in move
-    width = self.canvas.winfo_width()
-            ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1354, in winfo_width
-    self.tk.call('winfo', 'width', self._w))
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-_tkinter.TclError: bad window path name ".!frame.!phaseinteraction.!canvas"
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 491, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 510, in allow_interaction_for_phase
+    self.wires_frame.hide()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 420, in hide
+    self.timer_bar.pack_forget()
+    ^^^^^^^^^^^^^^
+AttributeError: 'WiresRevealFrame' object has no attribute 'timer_bar'
