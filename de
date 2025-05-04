@@ -7,34 +7,125 @@ Keypad Pins
 Jumper Wires Pins
 Button RGB Pins
 Toggle Switches Pins
-Serial Number: A00CE7I
-Toggles Target: 0111/7
+Serial Number: 2C9AE0J
+Toggles Target: 1011/11
 Wires Target: 10101/21
-Keypad Target: 25663/ALOOF/MIGHTY/BXVWIN (Rot=15)
-Button Target: 7 (B)
+Keypad Target: 22783/CARVE/NATURE/SFYZWJ (Rot=5)
+Button Target: 2 (G)
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 281, in start_game
-    setup_phases()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 70, in setup_phases
-    gamble = Gamble(
-             ^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 546, in __init__
-    self.roll_button = Button(
-                       ^^^^^^^
-TypeError: Button.__init__() got an unexpected keyword argument 'text'
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 285, in start_game
+    duck.setGamble(gamble)
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 487, in setGamble
+    self.gamble.dice_label.hide()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dice_label'
 Interacting with toggles
-Interacting with wires
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 66, in <lambda>
+    self.canvas.bind_all("<Right>", lambda e: self.move( 1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
+Interacting with gamble
+Interacting with keypad
 Interacting with toggles
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 66, in <lambda>
+    self.canvas.bind_all("<Right>", lambda e: self.move( 1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
+Interacting with gamble
 Interacting with keypad
 Interacting with gamble
-^CTraceback (most recent call last):
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 342, in <module>
-    window.mainloop()
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1485, in mainloop
-    self.tk.mainloop(n)
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1943, in __call__
-    def __call__(self, *args):
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 67, in <lambda>
+    self.canvas.bind_all("<Up>",    lambda e: self.move( 0, -1))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 65, in <lambda>
+    self.canvas.bind_all("<Left>",  lambda e: self.move(-1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 67, in <lambda>
+    self.canvas.bind_all("<Up>",    lambda e: self.move( 0, -1))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
+Interacting with toggles
+Interacting with keypad
+Interacting with toggles
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 66, in <lambda>
+    self.canvas.bind_all("<Right>", lambda e: self.move( 1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 499, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 542, in allow_interaction_for_phase
+    self.wires.activate()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 321, in activate
+    if self.on_time_update:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Wires' object has no attribute 'on_time_update'
