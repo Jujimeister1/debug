@@ -1,3 +1,32 @@
+AttributeError: 'PhaseInteraction' object has no attribute 'wires_frame'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 69, in <lambda>
+    self.canvas.bind_all("<Down>",  lambda e: self.move( 0,  1))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 484, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 503, in allow_interaction_for_phase
+    self.wires_frame.hide()
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'PhaseInteraction' object has no attribute 'wires_frame'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 66, in <lambda>
+    self.canvas.bind_all("<Left>",  lambda e: self.move(-1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 484, in move
+    self.allow_interaction_for_phase()
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 503, in allow_interaction_for_phase
+    self.wires_frame.hide()
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'PhaseInteraction' object has no attribute 'wires_frame'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
@@ -6,11 +35,9 @@ Traceback (most recent call last):
   File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 68, in <lambda>
     self.canvas.bind_all("<Up>",    lambda e: self.move( 0, -1))
                                               ^^^^^^^^^^^^^^^^^
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 491, in move
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 484, in move
     self.allow_interaction_for_phase()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 510, in allow_interaction_for_phase
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 503, in allow_interaction_for_phase
     self.wires_frame.hide()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 420, in hide
-    self.timer_bar.pack_forget()
-    ^^^^^^^^^^^^^^
-AttributeError: 'WiresRevealFrame' object has no attribute 'timer_bar'
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'PhaseInteraction' object has no attribute 'wires_frame'
