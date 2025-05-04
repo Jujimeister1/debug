@@ -1,4 +1,3 @@
-spartans@raspberrypi:~/Documents/csc102-defuse $ /bin/python /home/spartans/Documents/csc102-defuse/bomb/code/bomb.py
 pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
 Hello from the pygame community. https://www.pygame.org/contribute.html
 Running On Raspberry Pi
@@ -7,40 +6,32 @@ Keypad Pins
 Jumper Wires Pins
 Button RGB Pins
 Toggle Switches Pins
-Serial Number: D4A1030B0Z
+Serial Number: 10D7BEX
 Toggles Target: 1000/8
-Wires Target: 11010/26
-Keypad Target: 74837/RIVER/BANDIT/HGTJOZ (Rot=6)
-Button Target: 0 (B)
+Wires Target: 01011/11
+Keypad Target: 36937/FOXES/CANOPY/SQDEFO (Rot=16)
+Button Target: 1 (G)
 Interacting with toggles
-Exception in thread Timer:
-Traceback (most recent call last):
-  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
 Interacting with keypad
-    self.run()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 225, in run
-    self.update()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 233, in update
-    minutes = self._value // 60
-              ~~~~~~~~~~~~^^~~~
-TypeError: unsupported operand type(s) for //: 'method' and 'int'
+Interacting with keypad
+Interacting with keypad
+Interacting with keypad
+Interacting with keypad
 Interacting with toggles
-Exception in thread Timer:
+Exception in Tkinter callback
 Traceback (most recent call last):
-  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
-    self.run()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 225, in run
-    self.update()
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb_phases.py", line 233, in update
-    minutes = self._value // 60
-              ~~~~~~~~~~~~^^~~~
-TypeError: unsupported operand type(s) for //: 'method' and 'int'
-^CTraceback (most recent call last):
-  File "/home/spartans/Documents/csc102-defuse/bomb/code/bomb.py", line 321, in <module>
-    window.mainloop()
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1485, in mainloop
-    self.tk.mainloop(n)
-  File "/usr/lib/python3.11/tkinter/__init__.py", line 1943, in __call__
-    def __call__(self, *args):
-
-KeyboardInterrupt
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 67, in <lambda>
+    self.canvas.bind_all("<Right>", lambda e: self.move( 1,  0))
+                                              ^^^^^^^^^^^^^^^^^
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 418, in move
+    super().move(dx, dy)
+  File "/home/spartans/Documents/csc102-defuse/bomb/code/Duck_GUI_V2.py", line 109, in move
+    width = self.canvas.winfo_width()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/tkinter/__init__.py", line 1354, in winfo_width
+    self.tk.call('winfo', 'width', self._w))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad window path name ".!frame.!phaseinteraction.!canvas"
